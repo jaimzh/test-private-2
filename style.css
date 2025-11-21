@@ -1,0 +1,83 @@
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --header-color: #2c3e50;
+    --accent-color: #4a90e2;
+    --secondary-color: #e0e0e0;
+    --node-size: 16px;
+    --card-color: #fff;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: var(--card-color);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: var(--header-color);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 3rem;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--accent-color);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+/* Calendar Container */
+.calendar {
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
